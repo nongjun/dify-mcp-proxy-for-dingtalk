@@ -1,0 +1,30 @@
+{
+  "name": "mcp-proxy-server",
+  "version": "2.0.0",
+  "description": "MCP Proxy Server for DingTalk with optimized timeout and retry handling",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "echo \"Test not implemented yet\" && exit 0"
+  },
+  "keywords": ["mcp", "proxy", "dingtalk", "dify"],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "axios": "^1.6.0",
+    "axios-retry": "^3.8.0",
+    "p-queue": "^7.4.0",
+    "node-cache": "^5.1.2",
+    "dotenv": "^16.3.1",
+    "http-proxy-agent": "^7.0.0",
+    "https-proxy-agent": "^7.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
